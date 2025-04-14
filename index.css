@@ -1,0 +1,212 @@
+/* Grundlæggende styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Øverste bjælke */
+.top-bar {
+    background-color: #002147; /* Mørk blå farve */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Tillader responsivitet */
+}
+
+.top-bar .logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.top-bar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap; /* Tillader responsivitet */
+}
+
+.top-bar .nav-links li {
+    display: inline;
+}
+
+.top-bar .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.top-bar .nav-links a:hover {
+    color: #FFD700;
+}
+
+/* Bliv medlem knap */
+.top-bar .join-btn {
+    background-color: #FFD700;
+    color: #002147;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.top-bar .join-btn:hover {
+    background-color: #FFCC00;
+}
+
+/* Billede under top-bjælken */
+.hero-image {
+    width: 100%;
+    height: 500px;
+    background-image: url('https://a.travel-assets.com/findyours-php/viewfinder/images/res70/49000/49788-Copenhagen.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Indhold */
+.content {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 42px;
+    color: #002147;
+}
+
+.content p {
+    font-size: 22px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Info sektion */
+.info-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px;
+    margin-bottom: 50px;
+    flex-wrap: wrap; /* Tillader responsivitet */
+}
+
+.info-image {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+
+.info-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info-text {
+    flex: 1;
+    font-size: 22px;
+}
+
+.info-text h2 {
+    font-size: 36px;
+    color: #002147;
+    margin-bottom: 20px;
+}
+
+.info-text p {
+    font-size: 22px;
+    color: #333;
+    line-height: 1.8;
+}
+
+/* Responsivitet */
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .hero-image {
+        height: 300px;
+    }
+
+    .content h1 {
+        font-size: 28px;
+    }
+
+    .content p {
+        font-size: 18px;
+    }
+
+    .info-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .info-text {
+        font-size: 18px;
+    }
+
+    .info-text h2 {
+        font-size: 28px;
+    }
+}
+/* Afdelinger Sektion */
+.departments {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.department {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.department-image img {
+    width: 150px; /* Billedstørrelse */
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.department-info h2 {
+    font-size: 24px;
+    color: #002147;
+}
+
+.department-info p {
+    font-size: 16px;
+    color: #333;
+}
+
+.department-info a {
+    color: #1e4c00; /* Guld farve til e-mail */
+    text-decoration: none;
+}
+
+.department-info a:hover {
+    text-decoration: underline;
+}
