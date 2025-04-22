@@ -3,27 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DSNP - Forside</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Bliv Medlem – DSNP</title>
+    <link rel="stylesheet" href="../index.css">
+    <style>
+        .form-container {
+            max-width: 600px;
+            margin: 80px auto;
+            background-color: #f4f4f4;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #be1e2d;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #a41825;
+        }
+    </style>
 </head>
 <body>
     <div class="top-bar">
-        <div class="logo"><a href="index.html" style="text-decoration: none; color: white;">DSNP</a></div>
+        <div class="logo"><a href="../index.html" style="text-decoration: none; color: white;">DSNP</a></div>
         <ul class="nav-links">
-            <li><a href="Eksterne Sider/om-partiet.html">Om Partiet</a></li>
-            <li><a href="Eksterne Sider/medlemmer.html">Medlemmer</a></li>
-            <li><a href="Eksterne Sider/afdelinger.html">Afdelinger</a></li>
+            <li><a href="om-partiet.html">Om Partiet</a></li>
+            <li><a href="medlemmer.html">Medlemmer</a></li>
+            <li><a href="afdelinger.html">Afdelinger</a></li>
         </ul>
-        <a href="Eksterne Sider/medlem.html" class="join-btn">Bliv medlem</a>
+        <a href="medlem.html" class="join-btn">Bliv medlem</a>
     </div>
 
-    <div class="hero-image"></div>
+    <div class="form-container">
+        <h2>Bliv medlem af DSNP</h2>
+        <form action="mailto:medlem@dsnp.dk" method="post" enctype="text/plain">
+            <label for="navn">Fulde Navn</label>
+            <input type="text" id="navn" name="Navn" required>
 
-    <div class="content">
-        <h1>s</h1>
-        <p>s</p>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="Email" required>
+
+            <label for="besked">Hvorfor ønsker du at blive medlem?</label>
+            <textarea id="besked" name="Besked" rows="4" required></textarea>
+
+            <button type="submit">Send ansøgning</button>
+        </form>
     </div>
-
-    <script src="index.js"></script>
 </body>
 </html>
