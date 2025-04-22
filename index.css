@@ -65,6 +65,13 @@ body {
     background-size: cover;
     background-position: center;
 }
+.hero-image2 {
+    width: 100%;
+    height: 500px;
+    background-image: url('https://th.bing.com/th/id/OIP.l3WbjbFOyHe8TzI0KVQ9DAHaEZ?rs=1&pid=ImgDetMain');
+    background-size: cover;
+    background-position: center;
+}
 
 /* Indhold */
 .content {
